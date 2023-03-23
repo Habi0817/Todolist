@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>ToDo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="section__title fw-bold">ToDo List</h1>
+        <div class="row gy-2 gx-3 pt-3 pb-5 align-items-center justify-content-center">
+            <div class="col-9">
+                <label class="visually-hidden" for="autoSizingInput">New Task</label>
+                <input type="text" class="form-control autoSizingInput" id="autoSizingInput" placeholder="New Task" value="" >
+            </div>
+            <div class="col-auto ps-4">
+                <button type="submit" class="js-addbtn btn btn-primary">Add</button>
+            </div>
+        </div>
+        <p id="GFG_DOWN">
+        </p>
+        <ul class="js-item section__item"></ul>
+        
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/index.js"  src="./json/index.json"></script>
+    
+</body>
+
+</html>
